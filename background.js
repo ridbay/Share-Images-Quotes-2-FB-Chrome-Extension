@@ -1,4 +1,3 @@
-alert("hi");
 
 const MyGenericClick=(info, tab)=> {
     console.log("Clicked on page", info, tab);
