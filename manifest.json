@@ -4,7 +4,7 @@
     "version": "0.3",
     "permissions": ["contextMenus","activeTab"],
     "background": {
-        "script": ["background.js"]
+        "scripts": ["background.js"]
     },
     "manifest_version": 2
 }
