@@ -1,0 +1,10 @@
+{
+    "name": "My First Extension",
+    "description": "Shows a menu item",
+    "version": "0.3",
+    "permissions": [],
+    "background": {
+        "script": ["background.js"]
+    },
+    "manifest_version": 2,
+}
