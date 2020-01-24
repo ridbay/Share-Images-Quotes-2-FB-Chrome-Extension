@@ -1,9 +1,9 @@
 
-const MyGenericClick=(info, tab)=> {
+const MyGenericClick = (info, tab) => {
     console.log("Clicked on page", info, tab);
 }
 
-const MyImageClick = (info, tab)=> {
+const MyImageClick = (info, tab) => {
     console.log("Clicked an image", info, tab);
 }
 
@@ -20,10 +20,9 @@ chrome.contextMenus.create({
     "onclick": MyImageClick
 })
 
-function sendResponse(){
 
-}
 
-chrome.runtime.onMessage.addListener(function(msg, sender,sendResponse ){
-console.log("message",msg)
+chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
+    console.log("message", msg)
+    sendResponse({ "text": "Received the links" })
 })
