@@ -20,6 +20,10 @@ chrome.contextMenus.create({
     "onclick": MyImageClick
 })
 
-chrome.runtime.onMessage.addListener(message, sender, function(msg){
-console.log(msg)
+function sendResponse(){
+
+}
+
+chrome.runtime.onMessage.addListener(function(msg, sender,sendResponse ){
+console.log("message",msg)
 })
