@@ -2,9 +2,9 @@
     "name": "My First Extension",
     "description": "Shows a menu item",
     "version": "0.3",
-    "permissions": [],
+    "permissions": ["activeTabs"],
     "background": {
         "script": ["background.js"]
     },
-    "manifest_version": 2,
+    "manifest_version": 2
 }
