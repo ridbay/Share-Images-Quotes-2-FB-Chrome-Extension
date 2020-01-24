@@ -5,8 +5,9 @@ var dom = document.getElementById("rso");
 // console.log("The dom is", dom.innerHTML);
 
 var links = document.getElementsByClassName("r");
-console.log("Links", links)
-for(let i = 0; i < links[i].length; i++){
+
+
+for(let i = 0; i < links.length; i++){
     let title = links[i].getElementsByTagName("h3");
     console.log("Link is", title[0]);
 }
