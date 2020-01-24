@@ -11,12 +11,12 @@ function MyImageClick(info, tab){
 
 chrome.contextMenus.create({
     "title": "Share",
-    "context": ["page"],
+    "contexts": ["page"],
     "onclick": MyGenericClick
 })
 
 chrome.contextMenus.create({
     "title": "Share Image",
-    "context": ["image"],
+    "contexts": ["image"],
     "onclick": MyImageClick
 })

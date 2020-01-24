@@ -6,5 +6,10 @@
     "background": {
         "scripts": ["background.js"]
     },
+    "content_scripts": [
+        {
+            "js": ["index.js"]
+        }
+    ],
     "manifest_version": 2
 }
