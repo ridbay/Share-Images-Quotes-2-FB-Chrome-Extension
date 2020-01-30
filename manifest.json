@@ -1,6 +1,6 @@
 {
-    "name": "My First Extension",
-    "description": "Shows a menu item",
+    "name": "Share Images/Quotes 2 FB ",
+    "description": "Shows a menu item to share images or quotes to Facebook",
     "version": "0.3",
     "permissions": ["contextMenus","activeTab"],
     "icons": {
