@@ -6,7 +6,7 @@ function MyGenericClick(info, tab){
 function MyImageClick(info, tab){
     console.log("Clicked an image", info, tab);
     chrome.windows.create({
-        "url": "https://facebook.com/sharer.php",
+        "url": "https://facebook.com/sharer.php?u=" + info.srcUrl + "&display=popup",
         "type": "popup"
     })
 }
