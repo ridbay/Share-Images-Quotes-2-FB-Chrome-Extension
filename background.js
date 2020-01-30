@@ -1,10 +1,14 @@
 
-const MyGenericClick = (info, tab) => {
+function MyGenericClick(info, tab){
     console.log("Clicked on page", info, tab);
 }
 
-const MyImageClick = (info, tab) => {
+function MyImageClick(info, tab){
     console.log("Clicked an image", info, tab);
+    chrome.windows.create({
+        "url": "https://facebook.com/sharer.php",
+        "type": "popup"
+    })
 }
 
 
