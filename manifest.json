@@ -1,6 +1,6 @@
 {
     "name": "Share Images/Quotes 2 FB ",
-    "description": "Shows a menu item to share images or quotes to Facebook",
+    "description": "Right Click on an Image or highlighted texts to share to Facebook",
     "version": "0.3",
     "permissions": ["contextMenus","activeTab"],
     "icons": {
