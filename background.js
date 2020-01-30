@@ -7,6 +7,14 @@ function MyImageClick(info, tab){
     })
 }
 
+function MyQuoteClick(info, tab){
+    console.log("Clicked an image", info, tab);
+    chrome.windows.create({
+        "url": "https://facebook.com/sharer.php?u=" + info.srcUrl + "&display=popup",
+        "type": "popup"
+    })
+}
+
 
 
 chrome.contextMenus.create({
@@ -15,7 +23,11 @@ chrome.contextMenus.create({
     "onclick": MyImageClick
 })
 
-
+chrome.contextMenus.create({
+    "title": "Share Quote",
+    "contexts": ["selection"],
+    "onclick": MyQuoteClick
+})
 
 chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
     console.log("message", msg)
