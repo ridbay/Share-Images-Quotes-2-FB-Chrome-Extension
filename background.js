@@ -8,9 +8,9 @@ function MyImageClick(info, tab){
 }
 
 function MyQuoteClick(info, tab){
-    console.log("Clicked an image", info, tab);
+    console.log("Share a Quote", info, tab);
     chrome.windows.create({
-        "url": "https://facebook.com/sharer.php?u=" + info.srcUrl + "&display=popup",
+        "url": "https://facebook.com/sharer.php?u=" + info.pageUrl + "&display=popup&quote=" + info.selectionText,
         "type": "popup"
     })
 }
